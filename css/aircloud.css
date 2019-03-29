@@ -98,6 +98,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.avatar:hover {
+  filter: blur(2px);
+}
 .nav .avatar-name {
   display: flex;
   flex-direction: column;
