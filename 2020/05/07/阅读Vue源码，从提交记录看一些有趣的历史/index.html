@@ -11,7 +11,7 @@
 
     <title>
         
-        在前端项目中，通过webpack搭建手机可以远程访问的服务器 - Harry Wang&#39;s blog
+        阅读Vue源码，从提交记录看一些有趣的历史 - Harry Wang&#39;s blog
         
     </title>
 
@@ -92,7 +92,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#问题背景"><span class="toc-text">问题背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决方案"><span class="toc-text">解决方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作步骤"><span class="toc-text">操作步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意事项"><span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结"><span class="toc-text">小结</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于名称"><span class="toc-text">关于名称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于logo"><span class="toc-text">关于logo</span></a></li></ol>
 </div>
     
 </div>
@@ -152,11 +152,11 @@
 
 <div class="post-container">
     <div class="post-title">
-        在前端项目中，通过webpack搭建手机可以远程访问的服务器
+        阅读Vue源码，从提交记录看一些有趣的历史
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2019-03-07 17:00:55</span></span>
+        <span class="attr">发布于：<span>2020-05-07 10:47:41</span></span>
         
         
         <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
@@ -164,31 +164,8 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h3><p>在前端单页应用的开发过程中，除了在PC端Chrome浏览器中调试，还希望通过手机访问网页，查看在真机上的显示效果。</p>
-<hr>
-<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>webpack &amp; webpack-dev-server</p>
-<hr>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ol>
-<li>安装</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev webpack-dev-server</span><br></pre></td></tr></table></figure>
-<p>考虑到特殊国情，也可以使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save-dev webpack-dev-server</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>配置webpack.config.js，告诉服务器在哪里查找文件：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">devServer: &#123;</span><br><span class="line">    contentBase: &apos;./dist&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>配置package.json，添加一个script脚本：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;start&quot;: &quot;webpack-dev-server --host 0.0.0.0&quot;,</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>最后打开手机浏览器，访问地址“<a href="http://your_pc_address:8080”。" target="_blank" rel="noopener">http://your_pc_address:8080”。</a></li>
-</ol>
-<hr>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>PC和手机需要在同一局域网内。</p>
-<hr>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>万能的webpack！webpack本质上一个模块化解决方案，不过旗下丰富的插件也可以实现其他功能。</p>
+        <h3 id="关于名称"><a href="#关于名称" class="headerlink" title="关于名称"></a>关于名称</h3><p>Vue最开始的名字叫 <strong>element</strong>（根据2013-07-28的首次提交记录）,后来于2013-07-29改名为 <strong>seed</strong>，而最终确定为 <strong>Vue</strong>则要追溯到2013-12-08。</p>
+<h3 id="关于logo"><a href="#关于logo" class="headerlink" title="关于logo"></a>关于logo</h3><p>现在开始看Vue官网的源码，根据2014-01-11的提交记录，最开始的logo是长这样的：<br><img src="vue_logo.png" alt=""></p>
 
         
         <br>
