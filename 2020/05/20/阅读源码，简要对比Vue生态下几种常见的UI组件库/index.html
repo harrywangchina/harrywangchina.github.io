@@ -11,7 +11,7 @@
 
     <title>
         
-        Harry Wang&#39;s blog
+        阅读源码，简要对比Vue生态下几种常见的UI组件库 - Harry Wang&#39;s blog
         
     </title>
 
@@ -40,32 +40,6 @@
     <i> From Computer Geek to Cult Icon </i>
 </div>
 
-    <div class="header">
-        <h1 class="title">
-            Coding<br>For Fun ~
-        </h1>
-        <div class="intro">
-            <div class="section">
-                <h2>目标</h2>
-                <p>做一生的工程师，这是快乐的源泉</p>
-            </div>
-            <div class="section">
-                <h2>生活</h2>
-                <p>带娃不易，但是看着他就仿佛自己的人生可以重来</p>
-            </div>
-            <div class="section">
-                <h2>进阶</h2>
-                <p>程序员的自我修养</p>
-            </div>
-        </div>
-        <p>
-            <a id="modal-player" class="button zhihu" href="https://www.zhihu.com/people/wang-hao-21" target="_blank">知乎</a>
-            <a class="button douban" href="https://www.douban.com/people/1605585/" target="_blank">豆瓣</a>
-            <a class="button gray" href="https://github.com/harrywangchina" target="_blank">
-            GITHUB</a>
-        </p>
-    </div>
-
 
 <div class="index-container">
     
@@ -82,7 +56,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li class="active">
+            <li>
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -116,6 +90,10 @@
             
         </ul>
     </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Element"><span class="toc-text">Element</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ViewUI"><span class="toc-text">ViewUI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vuetify"><span class="toc-text">Vuetify</span></a></li></ol>
+</div>
     
 </div>
 
@@ -169,112 +147,38 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        <div id="posts" class="post-preview-container" style="min-height: 720px">
-    
-    <div class="post-preview">
-        <div class="post-time">2020-05-20</div>
-        <div class="post-info">
-            <a href="/2020/05/20/阅读源码，简要对比Vue生态下几种常见的UI组件库/">
-                <h3>
-                    阅读源码，简要对比Vue生态下几种常见的UI组件库
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2020-05-07</div>
-        <div class="post-info">
-            <a href="/2020/05/07/阅读Vue源码，从提交记录看一些有趣的历史/">
-                <h3>
-                    阅读Vue源码，从提交记录看一些有趣的历史
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-04-09</div>
-        <div class="post-info">
-            <a href="/2019/04/09/前端调试妙计/">
-                <h3>
-                    前端调试妙计
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-03-07</div>
-        <div class="post-info">
-            <a href="/2019/03/07/在前端项目中，通过webpack搭建手机可以远程访问的服务器/">
-                <h3>
-                    在前端项目中，通过webpack搭建手机可以远程访问的服务器
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-01-25</div>
-        <div class="post-info">
-            <a href="/2019/01/25/Vim使用中文帮助文档/">
-                <h3>
-                    Vim使用中文帮助文档
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-01-23</div>
-        <div class="post-info">
-            <a href="/2019/01/23/长草Mackbook-Pro/">
-                <h3>
-                    长草Mackbook Pro
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-01-22</div>
-        <div class="post-info">
-            <a href="/2019/01/22/今日份的感悟/">
-                <h3>
-                    今日份的感悟
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    
-</ul>
+        
 
+
+<div class="post-container">
+    <div class="post-title">
+        阅读源码，简要对比Vue生态下几种常见的UI组件库
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2020-05-20 10:13:25</span></span>
+        
+        
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content ">
+        <h3 id="Element"><a href="#Element" class="headerlink" title="Element"></a>Element</h3><p>用户量最大、文档最丰富、测试案例最完善的组件库，也是项目目前使用的组件库。<br>每个组件基本由两个文件组成:<strong>main.vue</strong> <strong>index.js</strong><br><strong>main.vue</strong> 负责业务逻辑，<strong>index.js</strong> 负责导出组件。</p>
+<h3 id="ViewUI"><a href="#ViewUI" class="headerlink" title="ViewUI"></a>ViewUI</h3><p>之前的iView，现在改名了，作者开始做一些商业上的尝试，作为独立开发者，可以算人生赢家。<br>代码中增加了JSX的支持，一些处理更优雅。</p>
+<h3 id="Vuetify"><a href="#Vuetify" class="headerlink" title="Vuetify"></a>Vuetify</h3><p>全部用ts实现，还使用了mixin来精简代码结构，这一点和我们项目的思路一样，所以感情上很认同。</p>
+
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
     </div>
 </div>
 
@@ -313,7 +217,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
